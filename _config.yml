@@ -5,11 +5,15 @@ title: Riccardo Casatta
 email: riccardo.casatta@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is my personal blog
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://riccardo.casatta.it" # the base hostname & protocol for your site
+baseurl: / # the subpath of your site, e.g. /blog
+url: http://rcasatta.github.io # the base hostname & protocol for your site
 twitter_username: RCasatta
 github_username:  RCasatta
 
 # Build settings
 markdown: kramdown
 #paginate: 5
+
+
+github:
+  repo:           https://github.com/RCasatta/rcasatta.github.io
