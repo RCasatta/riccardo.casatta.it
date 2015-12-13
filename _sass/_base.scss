@@ -174,6 +174,130 @@ pre {
 
 
 
+.icon:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit; }
+
+.navigation {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.sidebar-social {
+  margin-bottom: 1rem; }
+  .sidebar-social a {
+      width: 2em;
+      height: 2em; }
+    .sidebar-social a .label {
+      display: none; }
+    .sidebar-social a .icon {
+      display: block;
+      font-size: 1.34em; }
+
+.social-item {
+  display: inline-block;
+  margin: 1px;
+ }
+
+.social-item a {
+  display: block;
+  position: relative;
+  border: 1px solid #BBB;
+  border-radius: 50%;
+  font-weight: bold;
+  text-shadow: none;
+  color: #BBB;
+  -webkit-font-smoothing: antialiased; }
+  .navigation__item a:hover {
+    color: #FFF;
+    border-color: #FFF;
+ }
+
+.logo {
+  border-radius: 50%;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+.post-comments {
+  border-top: 1px solid #dddddd;
+  padding: 60px 0; }
+
+
+@media (min-width: 48em) {
+  .post-title {
+    font-size: 2.6rem; }
+}
+
+.post-overlay-header {
+  border-radius: 4px;
+  min-height: 190px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 48em) {
+  .post-overlay-header {
+    min-height: 300px;
+  }
+}
+
+.post-overlay-header-title {
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 1rem 0 1rem;
+  border-bottom-left-radius: 4px; }
+
+.post-overlay-header a {
+  color: #FFF;
+}
+.post-overlay-header a:hover, a:focus {
+  color: #CCC; }
+
+.post-overlay-header .post-date {
+  color: #DDDDDD;
+}
+
+.twitter a:hover {
+  color: #64B5F6;
+  border-color: #64B5F6; }
+
+.gplus a:hover {
+  color: #E57373;
+  border-color: #E57373; }
+
+.github a:hover {
+  color: #90A4AE;
+  border-color: #90A4AE; }
+
+.stackoverflow a:hover {
+  color: #FFD54F;
+  border-color: #FFD54F; }
+
+.foursquare a:hover {
+  color: #7986CB;
+  border-color: #7986CB; }
+
+.linkedin a:hover {
+  color: #64B5F6;
+  border-color: #64B5F6; }
+
+.mail a:hover {
+  color: #4DB6AC;
+  border-color: #4DB6AC; }
+
+
 /**
  * Clearfix
  */
@@ -203,4 +327,10 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+.sidebar-about .logo {
+    margin-left: auto;
+    margin-right: auto;
 }
