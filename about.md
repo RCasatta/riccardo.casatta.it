@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-
 I am Riccardo Casatta, a Software Engineer that likes to be creative.
 
 My current focus is on [bitcoin](http://bitcoin.org), or should I say blockchain technologies that nowadays sounds better even if I think bitcoin and blockchain are too deeply interconnected to consider one without the other.
