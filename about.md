@@ -8,7 +8,7 @@ I am Riccardo Casatta, a Software Engineer that likes to be creative.
 
 My current focus is on [bitcoin](http://bitcoin.org), or should I say blockchain technologies that nowadays sounds better even if I think bitcoin and blockchain are too deeply interconnected to consider one without the other.
 
-I have many hats:
+I have different hats:
 
 * Associate at [Synaptica](http://synaptica.info) a consultant and software house company.
 * Founder at [Assob.it](http://assob.it) an italian association to promote diffusion of blockchain technologies.
