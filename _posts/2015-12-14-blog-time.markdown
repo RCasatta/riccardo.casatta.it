@@ -7,4 +7,5 @@ This is blog time for me.
 
 I am taking advantage of the experience taken on releasing this blog to release another one shortly after.
 It's the blog of the project which is my main focus today, which is Eternity Wall.
+
 Welcome [Eternity Wall Blog](http://blog.eternitywall.it)!
