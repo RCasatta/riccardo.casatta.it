@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog time!"
-permalink: 2015-12-14-blog-time
+permalink: /2015/12/14/blog-time/
 category: general
 tags: news
 ---

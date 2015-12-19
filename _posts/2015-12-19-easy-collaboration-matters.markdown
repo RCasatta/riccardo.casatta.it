@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Easy collaboration matters"
-permalink: 2015-12-19-easy-collaboration-matters
+permalink: /2015/12/19/easy-collaboration-matters/
 category: general
 tags: git open-source
 ---
 
 Why did I choose to open a blog and why this technologies?
 
-1. Like I was saying in the very [first post](/2015-12-13-welcome-to-my-personal-web-site) of this blog, I want to keep list of my projects and social contacts.
+1. Like I was saying in the very [first post](/2015/12/13/welcome-to-my-personal-web-site) of this blog, I want to keep list of my projects and social contacts.
 2. Sharing my thoughts.
 3. I want to ride the revolution of spontaneous collaborative works that comes from open source and instruments like git.
 
