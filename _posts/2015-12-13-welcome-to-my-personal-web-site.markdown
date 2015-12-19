@@ -1,6 +1,9 @@
 ---
 layout: post
 title:  "Welcome to my personal web site!"
+permalink: 2015-12-13-welcome-to-my-personal-web-site
+category: general
+tags: news
 ---
 
 Welcome to my personal web site!
