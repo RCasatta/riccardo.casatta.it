@@ -15,7 +15,7 @@ I wrote some code to randomly create mock up data for **700 people** and **100 c
 ## First attempt
 In my [first attempt](https://github.com/RCasatta/jekyll-scalability-test/tree/95d34ff328fc622400604728553b52dd9b2a8d75) I created one page for every person and every company, I stored every data in in the [Front Matter](http://jekyllrb.com/docs/frontmatter/) of the pages, for example:
 
-{% highlight %}
+{% highlight html %}
 ---
 layout: company
 id: able
@@ -49,7 +49,7 @@ I initially thought that every Front Matter data was kept in memory in the build
 
 In the front matter of pages I am now storing just the id and required parameter
 
-{% highlight %}
+{% highlight html %}
 ---
 layout: company
 id: ability
@@ -60,7 +60,7 @@ permalink: /companies/ability.html
 
 I am also keeping a companies.yml file containing:
 
-{% highlight %}
+{% highlight html %}
 ability:
   name: Ability
   founded: 2004
