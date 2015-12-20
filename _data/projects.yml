@@ -1,0 +1,8 @@
+eternitywall:
+  title: Eternity Wall
+  url: http://eternitywall.it
+  description: Messages lasting forever
+identicon:
+  title: Identicon
+  url: http://identicon-1132.appspot.com/
+  description: Identicon generator written in Python for Appengine
