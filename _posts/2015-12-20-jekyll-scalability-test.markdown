@@ -33,9 +33,9 @@ With this data structure, the liquid code showing the employees of a company is 
 {% raw %}
 {% for person in page.people %}
   {% for apage in site.pages %}
-    {%% if apage.id == person %}
+    {% if apage.id == person %}
      <li><a href="/people/{{ person }}">{{ apage.title }}</a></li>
-    {%% endif %}
+    {% endif %}
   {% endfor %}
 {% endfor %}
 {% endraw %}
