@@ -2,7 +2,6 @@
 layout: post
 title:  "Jekyll scalability test"
 permalink: /2015/12/20/jekyll-scalability-test/
-category: general
 tags: git open-source jekyll scalability
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title:  "Easy collaboration matters"
 permalink: /2015/12/19/easy-collaboration-matters/
-category: general
 tags: git open-source
 ---
 
