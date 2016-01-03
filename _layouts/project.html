@@ -4,8 +4,19 @@ layout: default
 
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
 
+    {% if page.url %}
+      <a href="{{page.url}}">site</a> {% if page.source %}|{% endif %}
+    {% endif %}
+    {% if page.source %}
+      <a href="{{page.source}}">source</a>
+    {% endif %}
+
+  <p>
+    {{ content }}
+  </p>
+
+  {% capture list %}
   <h3>Related posts:</h3>
   <ul>
   {% for post in site.posts %}
@@ -14,5 +25,11 @@ layout: default
     {% endif %}
   {% endfor %}
   </ul>
+  {% endcapture %}
+
+  {% assign length = list | size %}
+  {% if length > 87 %}
+    {{ list }}
+  {% endif %}
 
 </div>

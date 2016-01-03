@@ -14,6 +14,12 @@
   url: http://eternitywall.it
   source: 
   description: Messages lasting forever
+/projects/geobit/:
+  title: Geobit
+  url: http://geobit.io
+  source: 
+  description: The next generation platform for advertising and promoting using geolocation
+    and bitcoins
 /projects/identicon/:
   title: Identicon
   url: http://identicon-1132.appspot.com/

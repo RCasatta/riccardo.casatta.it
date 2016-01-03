@@ -10,12 +10,12 @@ permalink: /projects/
 
 <h2>{{ value.title }}</h2>
 <p class="post-meta">{{value.description}}.<br>
-  <a href="{{key}}">more<a> |
+  <a href="{{key}}">more<a>
   {% if value.url %}
-  <a href="{{value.url}}">site</a> |
+  | <a href="{{value.url}}">site</a>
   {% endif %}
   {% if value.source %}
-  <a href="{{value.source}}">source</a>
+  | <a href="{{value.source}}">source</a>
   {% endif %}
 </p>
 
