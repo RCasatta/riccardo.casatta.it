@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jekyll generator test"
-tags: git open-source jekyll ruby
+project: /projects/knowledge-base/
 ---
 
 Following my [previous](/2015/12/20/jekyll-scalability-test/) post I build a Jekyll plugin for creating a central yml file built from front matters of pages and posts.

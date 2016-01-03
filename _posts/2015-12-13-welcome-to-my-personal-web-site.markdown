@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Welcome to my personal web site!"
-tags: news
 ---
 
 Welcome to my personal web site!

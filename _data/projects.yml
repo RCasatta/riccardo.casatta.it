@@ -1,8 +1,31 @@
-eternitywall:
+---
+/projects/estimate-fee/:
+  title: Estimate Fee
+  url: http://estimatefee.appspot.com/
+  source: https://github.com/RCasatta/estimatefee
+  description: Fee estimation charts for the bitcoin network
+/projects/eternity-wall-android/:
+  title: Eternity Wall on android
+  url: https://play.google.com/store/apps/details?id=it.eternitywall.eternitywall
+  source: https://github.com/RCasatta/EternityWallAndroid
+  description: Eternity Wall for mobile on android platform
+/projects/eternity-wall/:
   title: Eternity Wall
   url: http://eternitywall.it
+  source: 
   description: Messages lasting forever
-identicon:
+/projects/identicon/:
   title: Identicon
   url: http://identicon-1132.appspot.com/
-  description: Identicon generator written in Python for Appengine
+  source: https://github.com/RCasatta/pidenticon
+  description: Recognizable images based on data
+/projects/knowledge-base/:
+  title: Knowledge base
+  url: http://riccardo.casatta.it/knowledge-base/
+  source: https://github.com/RCasatta/knowledge-base
+  description: Collaborative knowledge base on a static web site
+/projects/op-return-stats/:
+  title: Op Return Stats
+  url: http://opreturn-976.appspot.com/
+  source: https://github.com/RCasatta/op_return
+  description: Utilization statistics of bitcoin script OP_RETURN

@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Blog time!"
-permalink: /2015/12/14/blog-time/
-tags: news
 ---
 
 This is blog time for me.

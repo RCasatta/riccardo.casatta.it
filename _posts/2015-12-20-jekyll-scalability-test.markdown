@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Jekyll scalability test"
-permalink: /2015/12/20/jekyll-scalability-test/
-tags: git open-source jekyll scalability
+project: /projects/knowledge-base/
 ---
 
 At work, we were questioning about building a collaborative knowledge base with git and jekyll. For this purpose we need entities with properties and relations among them.

@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Easy collaboration matters"
-permalink: /2015/12/19/easy-collaboration-matters/
-tags: git open-source
 ---
 
 Why did I choose to open a blog and why this technologies?
