@@ -6,10 +6,13 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
 
     {% if page.url %}
-      <a href="{{page.url}}">site</a> {% if page.source %}|{% endif %}
+      <a href="{{page.url}}">site</a>
     {% endif %}
     {% if page.source %}
-      <a href="{{page.source}}">source</a>
+      | <a href="{{page.source}}">source</a>
+    {% endif %}
+    {% if page.blog %}
+      | <a href="{{page.blog}}">blog</a>
     {% endif %}
 
   <p>

@@ -1,37 +1,43 @@
 ---
 /projects/estimate-fee/:
   title: Estimate Fee
+  layout: project
   url: http://estimatefee.appspot.com/
   source: https://github.com/RCasatta/estimatefee
   description: Fee estimation charts for the bitcoin network
-/projects/eternity-wall-android/:
-  title: Eternity Wall on android
-  url: https://play.google.com/store/apps/details?id=it.eternitywall.eternitywall
-  source: https://github.com/RCasatta/EternityWallAndroid
-  description: Eternity Wall for mobile on android platform
+  image: /content/images/estimate-fee.png
 /projects/eternity-wall/:
   title: Eternity Wall
+  layout: project
   url: http://eternitywall.it
-  source: 
   description: Messages lasting forever
+  image: /content/images/eternity_logo_final_square_100x100.png
+  blog: http://blog.eternitywall.it/
 /projects/geobit/:
   title: Geobit
+  layout: project
   url: http://geobit.io
-  source: 
   description: The next generation platform for advertising and promoting using geolocation
     and bitcoins
+  image: /content/images/logo-geobit-100.png
 /projects/identicon/:
   title: Identicon
+  layout: project
   url: http://identicon-1132.appspot.com/
   source: https://github.com/RCasatta/pidenticon
   description: Recognizable images based on data
+  image: http://identicon-1132.appspot.com/RANDOMDATA?s=14&p=7
 /projects/knowledge-base/:
   title: Knowledge base
+  layout: project
   url: http://riccardo.casatta.it/knowledge-base/
   source: https://github.com/RCasatta/knowledge-base
   description: Collaborative knowledge base on a static web site
+  image: /content/images/SI_base_unit.svg.png
 /projects/op-return-stats/:
   title: Op Return Stats
+  layout: project
   url: http://opreturn-976.appspot.com/
   source: https://github.com/RCasatta/op_return
   description: Utilization statistics of bitcoin script OP_RETURN
+  image: /content/images/op-return.png

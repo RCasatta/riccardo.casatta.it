@@ -19,10 +19,11 @@ module Jekyll
         if( layout == 'project')
           values = {}
           id = page.url;
-          values['title']  = title
-          values['url']    = page.data['url']
-          values['source'] = page.data['source']
-          values['description'] = page.data['description']
+          values = page.data;
+          #values['title']  = title
+          #values['url']    = page.data['url']
+          #values['source'] = page.data['source']
+          #values['description'] = page.data['description']
 
           projects[id] = values
         end
