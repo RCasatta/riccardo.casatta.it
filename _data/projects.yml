@@ -11,7 +11,7 @@
   layout: project
   url: http://eternitywall.it
   description: Messages lasting forever
-  image: /content/images/eternity_logo_final_square_100x100.png
+  image: /content/images/eternity_logo_final_square_200x200.png
   blog: http://blog.eternitywall.it/
 /projects/geobit/:
   title: Geobit
