@@ -13,6 +13,9 @@
   description: Messages lasting forever
   image: /content/images/eternity_logo_final_square_200x200.png
   blog: http://blog.eternitywall.it/
+  status:
+    level: primary
+    label: top
 /projects/geobit/:
   title: Geobit
   layout: project
@@ -20,6 +23,9 @@
   description: The next generation platform for advertising and promoting using geolocation
     and bitcoins
   image: /content/images/logo-geobit-100.png
+  status:
+    level: info
+    label: frozen
 /projects/identicon/:
   title: Identicon
   layout: project

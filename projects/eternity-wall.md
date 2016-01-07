@@ -5,6 +5,9 @@ url: http://eternitywall.it
 description: Messages lasting forever
 image: /content/images/eternity_logo_final_square_200x200.png
 blog: http://blog.eternitywall.it/
+status:
+  level: primary
+  label: top
 ---
 
 Currently my main focus, it’s a twitter like service with

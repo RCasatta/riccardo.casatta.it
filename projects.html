@@ -15,7 +15,11 @@ permalink: /projects/
     <img src="{{ value.image }}" height="100px" width="100px" />
   </div>
   <div style="display: block; margin-left:120px">
-    <h2>{{ value.title }} </h2>
+    <h2>{{ value.title }}
+      {% if value.status.label %}
+        <span class="label label-{{ value.status.level }}" style="font-size: x-small">{{ value.status.label }}</span>
+      {% endif %}
+    </h2>
     <p class="post-meta">{{value.description}}.
     <br>
       <a href="{{key}}">more<a>
