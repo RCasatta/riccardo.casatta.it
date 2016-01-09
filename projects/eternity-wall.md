@@ -1,7 +1,7 @@
 ---
 title: Eternity Wall
 layout: project
-url: http://eternitywall.it
+site: http://eternitywall.it
 description: Messages lasting forever
 image: /content/images/eternity_logo_final_square_200x200.png
 blog: http://blog.eternitywall.it/

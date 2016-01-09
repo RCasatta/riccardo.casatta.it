@@ -1,7 +1,7 @@
 ---
 title: Identicon
 layout: project
-url: http://identicon-1132.appspot.com/
+site: http://identicon-1132.appspot.com/
 source: https://github.com/RCasatta/pidenticon
 description: Recognizable images based on data
 image: http://identicon-1132.appspot.com/random?s=14&p=7

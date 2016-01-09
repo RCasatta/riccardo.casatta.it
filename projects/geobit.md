@@ -1,7 +1,7 @@
 ---
 title: Geobit
 layout: project
-url: http://geobit.io
+site: http://geobit.io
 description: The next generation platform for advertising and promoting using geolocation and bitcoins
 image: /content/images/logo-geobit-100.png
 status:
