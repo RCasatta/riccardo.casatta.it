@@ -19,7 +19,7 @@ layout: default
     {{ content }}
   </p>
 
-  <br><div class="kudos" data-amount="0" data-url="{{ page.url | prepend: site.url }}"></div><br>
+  <br><div class="kudos" data-amount="0" data-url="{{ page.url | prepend: site.urlnohttp }}"></div><br>
 
   {% capture list %}
   <h3>Related posts:</h3>

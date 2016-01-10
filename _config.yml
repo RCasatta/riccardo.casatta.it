@@ -7,6 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Creative Engineer
 baseurl: / # the subpath of your site, e.g. /blog
 url: http://rcasatta.github.io # the base hostname & protocol for your site
+urlnohttp: rcasatta.github.io # the base hostname & protocol for your site
 twitter_username: RCasatta
 github_username:  RCasatta
 
