@@ -9,3 +9,25 @@
   ga('send', 'pageview');
 
 </script>
+<script src="/js/kudosplease-min.js"></script>
+
+<script type="text/javascript">
+  function initKudos() {
+    console.log("initKudos");
+    new KudosPlease({
+     el : '.kudos',
+     duration : 1500,
+     persistent : true,
+     status : {
+       alpha: 'fontelico-emo-shoot',
+       beta: 'fontelico-emo-shoot',
+       gamma: 'fontelico-emo-beer'
+     }
+    });
+  }
+  if (window.addEventListener)
+   window.addEventListener("load", initKudos, false);
+  else if (window.attachEvent)
+   window.attachEvent("onload", initKudos);
+  else window.onload = initKudos;
+</script>

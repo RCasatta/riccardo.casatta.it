@@ -19,6 +19,8 @@ layout: default
     {{ content }}
   </p>
 
+  <br><div class="kudos" data-amount="0" data-url="{{ page.url | prepend: site.url }}"></div><br>
+
   {% capture list %}
   <h3>Related posts:</h3>
   <ul>
@@ -31,7 +33,7 @@ layout: default
   {% endcapture %}
 
   {% assign length = list | size %}
-  {% if length > 87 %}
+  {% if length > 100 %}
     {{ list }}
   {% endif %}
 
