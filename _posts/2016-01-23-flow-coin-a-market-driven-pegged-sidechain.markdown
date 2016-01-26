@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Flow coin"
+title:  "Flow coin, a market driven pegged sidechain"
 ---
 
 I am hereby proposing an idea for getting desired properties from both an altcoin and a two-way pegged token.
