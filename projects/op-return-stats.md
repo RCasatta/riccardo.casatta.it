@@ -1,7 +1,7 @@
 ---
 title: Op Return Stats
 layout: project
-site: http://opreturn-976.appspot.com/
+site: http://opreturn.org/
 source: https://github.com/RCasatta/op_return
 description: Utilization statistics of bitcoin script OP_RETURN
 image: /content/images/op-return.png
