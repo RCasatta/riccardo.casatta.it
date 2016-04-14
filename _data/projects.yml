@@ -40,6 +40,13 @@
   source: https://github.com/RCasatta/knowledge-base
   description: Collaborative knowledge base on a static web site
   image: /content/images/SI_base_unit.svg.png
+/projects/last-is-me/:
+  title: Last is me!
+  layout: project
+  site: http://lastis.me/
+  source: https://github.com/lastisme/lastisme.github.io
+  description: Ethereum based lottery
+  image: /content/images/turtle-clip-art-turtle6.png
 /projects/op-return-stats/:
   title: Op Return Stats
   layout: project
