@@ -4,8 +4,9 @@ title:  "Notes on Peter Todd's arguments"
 
 ---
 
+The following are just some notes I am taking before Peter Todd is coming to blokchainlab explaining some of his works
 
-## DEX
+## DEX
 
 [Peter's Document](https://github.com/WebOfTrustInfo/ID2020DesignWorkshop/blob/master/topics-and-advance-readings/DexPredicatesForSmarterSigs.md)
 
