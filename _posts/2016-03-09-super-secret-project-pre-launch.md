@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Super secret project pre-launch"
+project: /projects/last-is-me/
 ---
 
 I had another idea bouncing around lately...
