@@ -68,7 +68,7 @@ After 6 blocks or something the sender reveal the transaction and the miner cann
 
 ## Publishing text
 
-create a pay to script hash address with a script containing a message long up to 500 chars
+create a pay to script hash address with a script containing a message long up to 500 chars per input
 
 [Python example](https://github.com/petertodd/python-bitcoinlib/blob/master/examples/publish-text.py)
 
@@ -321,5 +321,3 @@ Bbin=binascii.unhexlify(B)
 hBbin = hashlib.sha256(hashlib.sha256(Bbin).digest()).digest()
 binascii.hexlify(hBbin) # "3f3b1561cedf065a70edd35d9b1546de3d4ad2698a7cfd030000000000000000"
 {% endhighlight %}
-
-04000000fb312a4a8035922bb03a1d53a400f5aef6706eae843b7d040000000000000000c8dcb6e6fc4556501228a44b9bdd25463ca09a2f4174d20d0d079dcd79cad96a9e0b50573684051839660b0d
