@@ -68,50 +68,42 @@ After 6 blocks or something the sender reveal the transaction and the miner cann
 
 ## Publishing text
 
+create a pay to script hash address with a script containing a message long up to 500 chars
+
 [Python example](https://github.com/petertodd/python-bitcoinlib/blob/master/examples/publish-text.py)
+
 
 ## OpenTimestamps
 
 [server](https://github.com/opentimestamps/opentimestamps-server)
+
 [client](https://github.com/opentimestamps/opentimestamps-client)
-[python-opentimestamps](https://github.com/petertodd/python-opentimestamps)
 
-### OpenTimestamps server Example
 
-Start an otsd server first:
 
-    ./otsd
-
-The directory ~/.otsserver will be created to store the submitted timestamps.
-
-Now submit a timestamp to the server:
-
-    ./client/ots submit README.md
-
-This creates a README.md.ots file.
-
-Sign the digests on the server with GPG:
-
-    ./client/ots sign <fingerprint>
-
-where fingerprint is the fingerprint of a key that you can sign with. This need
-to be the full fingerprint, not the short 8-character long key id.
-
-Now complete the timestamp:
-
-    ./client/ots complete README.md.ots
-
-Verify it:
-
-    ./client/ots verify README.md
-
-You can see what is actually stored in the timestamp in human readable format too:
-
-    ./client/ots jsondump README.md.ots
 
 ### Python OpenTimestamps example
 
+[python-opentimestamps](https://github.com/petertodd/python-opentimestamps)
+
 [ots](https://github.com/petertodd/python-opentimestamps/blob/master/ots)
+
+## Example stamp
+
+starting from [this file](https://raw.githubusercontent.com/opentimestamps/opentimestamps-client/879cec46c2ba34fa7422c993ef10c27cab1e9de7/ots)
+
+{% highlight shell %}
+./ots stamp ots # create a bitcoin tx and `ots.ots.pending`
+
+# after some time
+
+./ots complete ots.ots.pending # create the stamp `ots.ots`
+
+./ots verify ots.ots
+DEBUG:root:Hashed ots -> 78e4400495668c2984752aaafe06c28e64bf6b4182d9bd976aae48bb294121ea
+INFO:root:Success! ots was created on or before 2016-06-02 12:34:06
+{% endhighlight %}
+
 
 
 #### Stamp
@@ -119,7 +111,7 @@ You can see what is actually stored in the timestamp in human readable format to
 * get `filenametohash` as paramter
 * Hash a file, optionally adding a nonce with sha256
 * create a file `F1` with name `<filenametohash> + 'ots.pending'`
-* create a bitcoin address from the created hash  (unspendable UTXO spam why not opret? because it's prunable?)
+* create a bitcoin address from the created hash  (unspendable UTXO spam why not opret??? because it's prunable?)
 * send dust to it from bitcoin core and get txid
 * write to `F1` -> `nonce`, `txid` and `addr` (Why not hash?)
 
@@ -142,21 +134,7 @@ You can see what is actually stored in the timestamp in human readable format to
 * `hash`=sha256(`filenamepreviouslycompleted`)
 * verify stamp is in the block (check stamp.verify)
 
-## Example stamp
 
-starting from [this file](https://raw.githubusercontent.com/opentimestamps/opentimestamps-client/879cec46c2ba34fa7422c993ef10c27cab1e9de7/ots)
-
-{% highlight shell %}
-./ots stamp ots # create a bitcoin tx and `ots.ots.pending`
-
-# after some time
-
-./ots complete ots.ots.pending # create the stamp `ots.ots`
-
-./ots verify ots.ots
-DEBUG:root:Hashed ots -> 78e4400495668c2984752aaafe06c28e64bf6b4182d9bd976aae48bb294121ea
-INFO:root:Success! ots was created on or before 2016-06-02 12:34:06
-{% endhighlight %}
 
 ###### ots.ots.pending
 {% highlight shell %}
@@ -172,7 +150,7 @@ INFO:root:Success! ots was created on or before 2016-06-02 12:34:06
 [
   [
     [
-      "sha256",   # hash the input file `ots`
+      "sha256",   # hash the input file `ots` getting -> 78e4400495668c2984752aaafe06c28e64bf6b4182d9bd976aae48bb294121ea
       "",
       ""
     ],
@@ -312,7 +290,7 @@ INFO:root:Success! ots was created on or before 2016-06-02 12:34:06
       ""
     ],
     [
-      "sha256",   # After this last operation you have the merkle root
+      "sha256",   # After this last operation you have the merkle root ???
       "",
       ""
     ]
