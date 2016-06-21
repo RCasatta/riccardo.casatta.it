@@ -23,19 +23,22 @@ contract TrustedAddress {
     mapping(address => mapping(address => bool)) votesMap;
 
     function voteNo(address voteFor) {
-        votesMap[msg.sender][voteFor]=false;
+        votesMap[msg.sender][voteFor] = false;
     }
 
     function voteYes(address voteFor) {
         var voter   = msg.sender;
         var myVotes = votes[voter];
-        if(myVotes.length==0) {
-            voters[voters.length++]=voter;
+
+        if (myVotes.length == 0) {
+            voters.push(voter);
         }
-        if(!votesMap[voter][voteFor]) {
-            myVotes[myVotes.length++]=voteFor;
+
+        if (!votesMap[voter][voteFor]) {
+            myVotes.push(voteFor);
         }
-        votesMap[voter][voteFor]=true;
+
+        votesMap[voter][voteFor] = true;
     }
 
     function totalVoters() constant returns (uint) {
@@ -50,9 +53,9 @@ contract TrustedAddress {
         return votes[voter].length;
     }
 
-    function votesOf(address voter, uint index) constant returns (address,bool) {
+    function votesOf(address voter, uint index) constant returns (address, bool) {
         address voted = votes[voter][index];
-        return (voted,votesMap[voter][voted]);
+        return (voted, votesMap[voter][voted]);
     }
 
 }
@@ -70,6 +73,14 @@ The trust matrix could be iterated by the utility constant function `totalVoters
 
 An external script could build the recommendation matrix for easily querying the most trusted contracts.
 
-If I trust only some of the address giving votes the recommendation matrix could also give quick answer question like, since I trust Bob, Charlie and Franco, is contract '0x12451' trustable?
+### Questions for the recommendation matrix
 
-Other interesting question are, who trusted contracts that turns out to be buggy?
+* If I trust only some of the address giving votes the recommendation matrix could also give quick answer question like, since I trust Bob, Charlie and Franco, is contract `0xC` trustable?
+* Other interesting question are, who trusted contracts that turns out to be buggy?
+
+### Possible improvements
+
+* Should we consider using signed integer (int8) for votes instead of boolean? This way we are not anymore a binary matrix and negative judgements can also be expressed. The recommendation matrix could be build in a binary form just by considering `M(i,j)>0`
+* Should we consider adding a comment/hash of comments on judgements?
+  * Writer personal opinion think to keep it simple, maybe could be addressed elsewhere, even out of the blockchain
+* What about a more catchy name? Is *Trusted Address* good?
