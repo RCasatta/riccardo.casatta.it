@@ -13,7 +13,7 @@ I would like to give my two cents for trying to build a better ecosystem, the id
 
 It's just a big sparse matrix where rows and columns are ethereum addresses.
 
-The following is the smart contract deployed at `0xd9877b432759354b896d0ce0caefec3dc2ff2dba` ([github](https://github.com/RCasatta/smart-contracts/blob/master/trustedaddress.sol), [interface](https://github.com/RCasatta/smart-contracts/blob/master/trustedaddress.sol.interface)):
+The following is the smart contract deployed at `0xd9877b432759354b896d0ce0caefec3dc2ff2dba` ([github](https://github.com/RCasatta/trusted-address/blob/master/trustedaddress.sol), [interface](https://github.com/RCasatta/trusted-address/blob/master/trustedaddress.sol.interface)):
 
 {% highlight shell %}
 contract TrustedAddress {
