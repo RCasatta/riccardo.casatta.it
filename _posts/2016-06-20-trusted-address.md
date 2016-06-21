@@ -13,7 +13,7 @@ I would like to give my two cents for trying to build a better ecosystem, the id
 
 It's just a big sparse matrix where rows and columns are ethereum addresses.
 
-The following is the smart contract deployed at `0xd9877b432759354b896d0ce0caefec3dc2ff2dba` ([github](https://github.com/RCasatta/trusted-address/blob/master/trustedaddress.sol), [interface](https://github.com/RCasatta/trusted-address/blob/master/trustedaddress.sol.interface)):
+The following is the smart contract deployed at `0xd2f068a3b3cffafed8880cfd92715602bd0c0ef0` on morden (testnet) ([github](https://github.com/trustedaddress/trusted-address/blob/master/trustedaddress.sol), [interface](https://github.com/trustedaddress/trusted-address/blob/master/trustedaddress.sol.interface)):
 
 {% highlight shell %}
 contract TrustedAddress {
@@ -78,7 +78,7 @@ Alice's address is `0xA`, Alice checked the smart contract at address `0xB` and 
 She express her trust in the contract by invoking the contract function:
 
 ```
-trustedaddress.voteYes('0xB',{from:eth.accounts[0]});
+trustedaddress.vote('0xB',1,{from:eth.accounts[0]});
 ```
 
 The trust matrix could be iterated by the utility constant function `totalVoters(), votersOfIndex(uint index), totalVotesOf(address voter) and votesOf(address voter, uint index)`.
