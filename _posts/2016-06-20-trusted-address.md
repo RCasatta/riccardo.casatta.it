@@ -13,55 +13,62 @@ I would like to give my two cents for trying to build a better ecosystem, the id
 
 It's just a big sparse matrix where rows and columns are ethereum addresses.
 
-The following is the smart contract deployed at `0xd2f068a3b3cffafed8880cfd92715602bd0c0ef0` on morden (testnet) ([github](https://github.com/trustedaddress/trusted-address/blob/master/trustedaddress.sol), [interface](https://github.com/trustedaddress/trusted-address/blob/master/trustedaddress.sol.interface)):
+The following is the smart contract deployed at `0x4d186c43198b3505a41d924a6e2aa6e69d41e978` on morden (testnet) ([github](https://github.com/trustedaddress/trustedaddress/blob/master/trustedaddress.sol), [interface](https://github.com/trustedaddress/trustedaddress/blob/master/trustedaddress.sol.interface)):
 
 {% highlight shell %}
 contract TrustedAddress {
 
-    address[] voters;
-    mapping(address => address[]) votes;
-    mapping(address => mapping(address => int8)) votesMap;
+    address[] votersArray;
+    mapping(address => address[]) votesOf;
+    mapping(address => mapping(address => int8)) votesMapOf;
+
+    //The function takes as an argument the address we want to vote for and
+    //a vote.
 
     function vote(address voteFor, int vote) {
-        address voter   = msg.sender;
-        address[] myVotes = votes[voter];
+        address currentVoter   = msg.sender;
 
-        if (myVotes.length == 0) {
-            voters.push(voter);
+        //If the currentVoter address hasn't voted before, add it to the votersArray
+        if (votesOf[currentVoter].length == 0) {
+            votersArray.push(currentVoter);
         }
-
-        if (votesMap[voter][voteFor] == 0) {
-            myVotes.push(voteFor);
+        //If no vote was casted toward this address, add vote in the voter's votes array
+        if (votesMapOf[currentVoter][voteFor] == 0) {
+            votesOf[currentVoter].push(voteFor);
         }
-
+        // Add vote to the mapping
         if(vote == 0) {
-            votesMap[voter][voteFor] = 0;
+            votesMapOf[currentVoter][voteFor] = 0;
         } else if (vote > 0) {
-            votesMap[voter][voteFor] = 1;
+            votesMapOf[currentVoter][voteFor] = 1;
         } else {
-            votesMap[voter][voteFor] = -1;
+            votesMapOf[currentVoter][voteFor] = -1;
         }
     }
 
     function totalVoters() constant returns (uint) {
-        return voters.length;
+        return votersArray.length;
     }
 
-    function votersOfIndex(uint index) constant returns (address) {
-        return voters[index];
+    function voterOfIndex(uint index) constant returns (address) {
+        return votersArray[index];
     }
 
-    function totalVotesOf(address voter) constant returns (uint) {
-        return votes[voter].length;
+    function totalVotesOf(address currentVoter) constant returns (uint) {
+        return votesOf[currentVoter].length;
+    }
+    
+    // Given an address and an index, it will return the i-th casted vote by that address
+    function votesMap(address currentVoter, uint index) constant returns (address, int8) {
+        address votedAddr = votesOf[currentVoter][index];
+        return (votedAddr, votesMapOf[currentVoter][votedAddr]);
     }
 
-    function votesOf(address voter, uint index) constant returns (address, int8) {
-        address voted = votes[voter][index];
-        return (voted, votesMap[voter][voted]);
-    }
-
-    function deleteEquals(address voter, uint index1, uint index2) {
-        address[] myVotes = votes[voter];
+    /* If an address has casted multiple votes toward the same address,
+    they will remain in its vote array. This method can help clean the matrix
+    */
+    function deleteEquals(address currentVoter, uint index1, uint index2) {
+        address[] myVotes = votesOf[currentVoter];
         address add1 = myVotes[index1];
         address add2 = myVotes[index2];
         if(add1 == add2 && add1 != 0 && index1 != index2) {
