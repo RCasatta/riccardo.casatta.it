@@ -1,0 +1,32 @@
+-
+  title: BitcoinCore
+  url: https://bitcoincore.org/en/blog/
+  desc: News from the bitcoin core developers
+-
+  title: Ethereum Blog
+  url: https://blog.ethereum.org/
+  desc: News from the Ethereum community
+-
+  title: Paul Storzc's blog
+  url: http://www.truthcoin.info/blog/
+  desc: Consistently winning praise, retweets, and upvotes from Bitcoin Experts around the web.
+-
+  title: Hacking, Distributed
+  url: http://hackingdistributed.com/
+  desc: Posts from  Emin Gün Sirer, Hacker and professor at Cornell, and his team
+-
+  title: Peter Todd
+  url: https://petertodd.org/
+  desc: Posts from Peter Todd, Applied Cryptography Consultant
+-
+  title: Rusty Russell
+  url: https://rusty.ozlabs.org/
+  desc: Rusty Russell's Coding Blog, Stealing From Smart People
+-
+  title: Oleg Andreev
+  url: http://blog.oleganza.com/
+  desc: Post from Oleg Andreev, who is a Software designer with focus on user experience and security.
+-
+  title: Bits on blocks
+  url: https://bitsonblocks.net/posts/
+  desc: Thoughts on blockchain technology

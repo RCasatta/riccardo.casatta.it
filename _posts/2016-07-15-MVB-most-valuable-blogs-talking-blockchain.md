@@ -4,9 +4,12 @@ title:  "\"MVB\" Most Valuable Blogs talking blockchain"
 
 ---
 
-* [BitcoinCore](https://bitcoincore.org/en/blog/)
-* [Ethereum Blog](https://blog.ethereum.org/)
-* [Paul Storzc's blog](http://www.truthcoin.info/blog/)
-* [Hacking, Distributed](http://hackingdistributed.com/)
-* [Peter Todd](https://petertodd.org/)
-* [Rusty Russell](https://rusty.ozlabs.org/)
+<br>
+
+{% for blog in site.data.blogs %}
+<h3><a href="{{ blog.url }}">{{ blog.title }}</a></h3>
+<p>{{ blog.desc }}</p>
+<div class="kudos small" data-amount="0" data-url="{{ blog.url }}" style="height: 3em; width: 3em;"></div>
+
+<br>
+{% endfor %}
