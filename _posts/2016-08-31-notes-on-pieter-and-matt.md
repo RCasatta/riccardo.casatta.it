@@ -17,13 +17,12 @@ Federated chain with bizantine fault tolerant reinvent traditional with better t
 Where bizantine fault tolerant are used in actual product today?
 
 
-the blockchain is a log of updates of a database!
-utxo set is exacty database
+The blockchain is a log of updates of a database! UTXO set is exactly database
 
 
-federated blockchain has no proof of work
-logs cannot be altered because who is going to modify it is known
-the advantage of bitcoin is parties are anonymous not the immutability
+Federated blockchain has no proof of work
+logs can be altered but since participant are known and loose reputation.
+The advantage of bitcoin is parties are anonymous not the immutability.
 
 
 Ferdinando say blockchain useful only for bearer asset
@@ -35,11 +34,10 @@ blockchain is just applied cryptography to vary arguments
 
 
 Mimble Wimble it's the first blockchain which is entirely prunable. While proving history is true.
-Andrew is working on proving formally mimble wimble
-Hard to implement in Bitcoin in the short term
+Andrew is working on proving formally mimble wimble. Hard to implement in Bitcoin in the short term.
 
 
-aggregating signatures could be an incentive for a coinjoin (because you use less space)
+Aggregating signatures could be an incentive for a coinjoin (because you use less space, thus pay less)
 
 
 Digital signatures is a specialized Zero Knowledge Proof, where talking about ZKP is intended g generalized ZKP
