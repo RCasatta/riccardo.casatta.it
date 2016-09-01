@@ -30,7 +30,7 @@ bearer asset vs registered asset (land ownership)
 blockchain great for fungible bearer asset
 
 
-blockchain is just applied cryptography to vary arguments
+Blockchain is just applied cryptography to vary arguments
 
 
 Mimble Wimble it's the first blockchain which is entirely prunable. While proving history is true.
@@ -46,4 +46,4 @@ Digital signatures is a specialized Zero Knowledge Proof, where talking about ZK
 OWAS are based on more recent history so less proven
 
 
-if you pay 20x for privacy I become a target, privacy must be default
+If you pay 20x for privacy I become a target, privacy must be default
