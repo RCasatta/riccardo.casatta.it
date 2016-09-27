@@ -46,4 +46,4 @@ Digital signatures is a specialized Zero Knowledge Proof, where talking about ZK
 OWAS are based on more recent history so less proven
 
 
-If you pay 20x for privacy I become a target, privacy must be default
+If you pay 20x for privacy I become a target, privacy must be the default.
