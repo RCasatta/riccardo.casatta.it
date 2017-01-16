@@ -14,7 +14,7 @@ The main reasons for the change are:
 
 If I had my key signed by many others with all probability I didn't change my master, but since my old master key isn't widespread I decided to take this step.
 
-Here follows the public statement signed with my old key, me new key, and opentimestamped:
+Here follows the public statement signed with my old key, my new key, and opentimestamped:
 
 ## Public statement
 
