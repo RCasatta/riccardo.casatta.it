@@ -1,0 +1,55 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+var createCORSRequest = function(method, url) {
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    // Most browsers.
+    xhr.open(method, url, true);
+  } else if (typeof XDomainRequest != "undefined") {
+    // IE8 & IE9
+    xhr = new XDomainRequest();
+    xhr.open(method, url);
+  } else {
+    // CORS not supported.
+    xhr = null;
+  }
+  return xhr;
+};
+
+var url = 'https://ots.eternitywall.it/digest';
+var method = 'POST';
+var xhr = createCORSRequest(method, url);
+
+xhr.onload = function() {
+  console.log("POST success");
+  // Success code goes here.
+};
+
+xhr.onerror = function() {
+  console.log("POST error");
+  // Error code goes here.
+};
+
+
+var url2 = 'https://ots.eternitywall.it/timestamp/588fc67d456893848b00a7af6602c839efb92203538686cec1d7b87051d224cc5068b5cc21d0879afe852be5';
+var method2 = 'GET';
+var xhr2 = createCORSRequest(method2, url2);
+
+xhr2.onload = function() {
+  console.log("GET success");
+  // Success code goes here.
+};
+
+xhr2.onerror = function() {
+  console.log("GET error");
+  // Error code goes here.
+};
+
+xhr2.send();
+</script>
+
+</body>
