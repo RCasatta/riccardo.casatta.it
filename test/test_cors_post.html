@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+var createCORSRequest = function(method, url) {
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    // Most browsers.
+    xhr.open(method, url, true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  } else if (typeof XDomainRequest != "undefined") {
+    // IE8 & IE9
+    xhr = new XDomainRequest();
+
+    xhr.open(method, url);
+  } else {
+    // CORS not supported.
+    xhr = null;
+  }
+  return xhr;
+};
+
+var url = 'https://alice.btc.calendar.opentimestamps.org/digest';
+var method = 'POST';
+var xhr = createCORSRequest(method, url);
+
+xhr.onload = function() {
+  console.log("POST success");
+  // Success code goes here.
+};
+
+xhr.onerror = function() {
+  console.log("POST error");
+  // Error code goes here.
+};
+
+xhr.send();
+
+</script>
+
+</body>

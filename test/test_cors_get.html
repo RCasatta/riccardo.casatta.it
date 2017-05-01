@@ -12,6 +12,7 @@ var createCORSRequest = function(method, url) {
   } else if (typeof XDomainRequest != "undefined") {
     // IE8 & IE9
     xhr = new XDomainRequest();
+    xhr.setRequestHeader("Content-Type", "text/plain");
     xhr.open(method, url);
   } else {
     // CORS not supported.
@@ -20,22 +21,8 @@ var createCORSRequest = function(method, url) {
   return xhr;
 };
 
-var url = 'https://ots.eternitywall.it/digest';
-var method = 'POST';
-var xhr = createCORSRequest(method, url);
-
-xhr.onload = function() {
-  console.log("POST success");
-  // Success code goes here.
-};
-
-xhr.onerror = function() {
-  console.log("POST error");
-  // Error code goes here.
-};
-
-
-var url2 = 'https://ots.eternitywall.it/timestamp/588fc67d456893848b00a7af6602c839efb92203538686cec1d7b87051d224cc5068b5cc21d0879afe852be5';
+//var url2 = 'https://alice.btc.calendar.opentimestamps.org/timestamp/588fc67d456893848b00a7af6602c839efb92203538686cec1d7b87051d224cc5068b5cc21d0879afe852be5';
+var url2 = 'https://eternitywall.it/?format=json';
 var method2 = 'GET';
 var xhr2 = createCORSRequest(method2, url2);
 
@@ -48,7 +35,8 @@ xhr2.onerror = function() {
   console.log("GET error");
   // Error code goes here.
 };
-
+xhr2.setRequestHeader("Content-Type", "text/plain");
+xhr2.setRequestHeader("accept", "text/plain");
 xhr2.send();
 </script>
 
