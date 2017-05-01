@@ -54,3 +54,13 @@
   source: https://github.com/RCasatta/op_return
   description: Utilization statistics of bitcoin script OP_RETURN
   image: /content/images/op-return.png
+/projects/opentimestamps/:
+  title: OpenTimestamps
+  layout: project
+  site: https://opentimestamps.org
+  source: https://github.com/opentimestamps
+  description: OpenTimestamps an open standard for timestamping
+  image: /content/images/logo_opentimestamps_mark_white.svg
+  status:
+    level: primary
+    label: top
