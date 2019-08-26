@@ -13,7 +13,6 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl or page.url == '/index.html' %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -34,20 +33,11 @@
     <nav class="sidebar-social">
   <ul class="navigation">
 
-
   <!-- Twitter -->
   <li class="social-item twitter">
     <a href="http://twitter.com/@rcasatta" title="@rcasatta on Twitter" target="_blank">
       <i class="icon fi-social-twitter"></i>
       <span class="label">Twitter</span>
-    </a>
-  </li>
-
-  <!-- Google+ -->
-  <li class="social-item gplus">
-    <a href="https://plus.google.com/u/0/+RiccardoCasatta" title="+RiccardoCasatta" target="_blank">
-      <i class="icon fi-social-google-plus"></i>
-      <span class="label">Google+</span>
     </a>
   </li>
 
@@ -66,13 +56,14 @@
       <span class="label">StackOverflow</span>
     </a>
   </li>
-    <!-- LinkedIn -->
-    <li class="social-item linkedin">
-      <a href="https://it.linkedin.com/in/riccardocasatta" title="Riccardo Casatta on LinkedIn" target="_blank">
-        <i class="icon fi-social-linkedin"></i>
-        <span class="label">LinkedIn</span>
-      </a>
-    </li>
+
+  <!-- LinkedIn -->
+  <li class="social-item linkedin">
+    <a href="https://it.linkedin.com/in/riccardocasatta" title="Riccardo Casatta on LinkedIn" target="_blank">
+      <i class="icon fi-social-linkedin"></i>
+      <span class="label">LinkedIn</span>
+    </a>
+  </li>
 
   </ul>
 </nav>

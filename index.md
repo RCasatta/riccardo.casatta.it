@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /
 ---
 
 I am Riccardo Casatta, a Software Engineer that likes to be creative.
@@ -12,8 +12,7 @@ My PGP fingerprint is the following `4FE1 A54A 224D 3F6B 6596  BBF8 0002 3405 9C
 
 My current focus is on [bitcoin](http://bitcoin.org), or should I say blockchain technologies that nowadays sounds better even if I think bitcoin and blockchain are too deeply interconnected to consider one without the other.
 
-I have different hats:
-
+* I work for [Blockstream](https://blockstream.com)
 * I am the CEO of [Eternity Wall](https://eternitywall.com), started as as side project experimenting with the properties of blockchain with [message lasting forever](https://eternitywall.it) it became a startup focused on Trustless Timestamping (timestamping  without middle-man through the blockchain), working on wannabe international standard called [OpenTimestamps](https://opentimestamps.org).
 * Associate at [Synaptica](http://synaptica.info) a consultant and software house company.
 * Founder at [Assob.it](http://assob.it) an italian association to promote diffusion of blockchain technologies.
