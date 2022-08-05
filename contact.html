@@ -4,25 +4,20 @@ title: Contact
 permalink: /contact/
 ---
 <br /><br />
-<form
-        action="https://formspree.io/f/xnqlrbey"
-        method="POST"
->
-  <label>
-    <p>Your email:</p>
-    <input type="email" name="_replyto">
-  </label>
+<form action="https://pay2.email/" method="POST">
+  <label for="reply_to">From:</label>
+  <input type="email" id="reply_to" name="reply_to" placeholder="Email address (optional)">
 
-  <br /><br />
-  <label>
-    <p>Your message:</p>
-    <textarea name="message" rows="4" cols="50"></textarea>
-  </label>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" placeholder="Message">
+  </textarea>
 
-  <br /><br />
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-  <br /><br />
-  <input type="hidden" name="_tags" value="riccardo.casatta.it">
+  <input type="hidden" name="to_enc"
+    value="e1v9nk2tt9de3hy7tsw35k7m3wdaexwtmkxy9z603qtqer2df38yszkkjr89kj7v2jwefk2nmvvdjny3te24rn25n3d488yemdvft9q4mg2euy64ncvd8xv3zfpfzxzut6tgmhxwrv8q4k2snyve5h5dzw23frsj68g3h85smr0fnnw6z2xankz7tvg939w6c295lzq325v5k9xdedvaex2ctnv5srq26cpg4ny4t62pzhxvryfennywzkdehk26nwwp3hgjfsdv6rj42cd3r82vrjxd3ksw24wpe8wmnwdpm52z3d95kjqc3swe582s2fwqe5c56sw988ye2td929jercfpmx5wpegfm9yk2vv98h24zjx3uyxa35xq9gq8n5sp9vawxr00ruezfxvv6mr9p07rqhwddn4qsav80u22s4gqxz3wuzxk0alpva2xjed8jxm0559yvueagexmushuvdrs332t">
+
+  <input type="hidden" name="subject_enc"
+    value="e1v9nk2tt9de3hy7tsw35k7m3wdaexwtmkxy9z603qtqer2df38ysrvejkgfzk6jj9wfe56nzt2efkknn5f3n55n6gw44nj6pkd3knycm32e5ku4fex355y3zepfmywajpxes4jenw24xyk3m82vc5wm34gezjkeejddu4qnt5ve5hqatwxuuxumjwx439zuc295lzqn6794nhyetpwdjjqwf3vsjjqcpq0ddkukjwfu7rggzg8u9yz5pk099xvjtgwu657vetvaqnvertwpa9gn660gexxe3hx3r4xm6pd9kkumfhf955y7rjwfrkja26w9yhx7jj23kzks3hfack2umegy9x5stt2u4hw6rfxyunqwpnwdsngd6kxer5zk2st9pyy6rg2yuk7m2nw96k5n6swfj5g7jngg9z6tfdypekxmtf89t4v5mhg3cz77nj89xy6jt5g9p9wkryv9nhgwred328j6txfpvycwrgx439guc2z7we66dnswt47q93xwqsgmvfffhdsrywuds6x2dwxzxghmhemzzmkctm6lktfjtx3cwquaam5cr9h5sk5gwhsw288qxte7ty">
+
+  <button type="submit">Submit</button>
 
 </form>
