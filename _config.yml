@@ -15,7 +15,6 @@ github_username:  RCasatta
 #markdown: kramdown
 #paginate: 5
 permalink: pretty
-lightning_node_url: 02c095d069538f96bf14c5f90f6c0851bdf354a0ec86039a24bf38a73f705adc2c@ykubilhxbv2xpsnvunmduwew7p22n6jush2sjipcr5sfzyrshwpksayd.onion:9735
 
 github:
   repo: https://github.com/RCasatta/rcasatta.github.io
